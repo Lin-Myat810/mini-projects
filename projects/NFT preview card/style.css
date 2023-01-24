@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
+
+
+:root{
+    /* Primary */
+
+--Soft-blue: hsl(215, 51%, 70%);
+--Cyan: hsl(178, 100%, 50%);
+
+    /* Neutral */
+
+--Very-dark-blue: hsl(217, 54%, 11%); /* main BG*/
+--Very-dark-blue: hsl(216, 50%, 16%); /* card BG*/
+--Very-dark-blue: hsl(215, 32%, 27%); /* Line*/
+--White: hsl(0, 0%, 100%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    height: 100vh;
+    background-color: hsl(217, 54%, 11%);
+    font-family: 'Outfit', sans-serif;
+    
+}
+
+.container{
+
+    width: 400px;
+    height: 650px;
+    /* text-align: center; */
+    background:hsl(216, 50%, 16%);
+    border-radius: 10px 10px;
+}
+
+.img-section{
+    position: relative;
+    overflow: inherit;
+    border-radius: 0.5rem;
+    height: 24rem;
+}
+
+.main-img, .sec-img{
+    width: 300px;
+    margin: 2.5rem;
+    border-radius: 0.5rem;
+}
+
+.main-img:hover{
+    cursor: pointer;
+}
+
+.sec-img{
+    position: absolute;
+    top: 0;
+    height: 300px;
+    padding: 130px;
+    background-color:hsl(178, 100%, 50%,60%);
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+}
+
+.sec-img:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+
+.sec-img:hover{
+    opacity: 1;
+} 
+
+
+
+h2{
+    color: hsl(0, 0%, 100%);
+    margin: 0.5rem 1.5rem;
+
+}
+
+.title:hover{
+    cursor: pointer;
+    color: var(--Cyan);
+}
+
+.text-body p{
+    color:  hsl(215, 51%, 70%);
+    margin: 1rem 1.5rem;
+    font-size: 20px;
+
+}
+
+.price-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem;
+}
+
+.eth-price{
+    color: var(--Cyan);
+}
+
+.eth-time{
+    color: hsl(215, 51%, 70%);
+    padding-right: 2rem;
+}
+
+.creator{
+    width: 85%;
+    margin: 0 20px;
+}
+
+.creator-content{
+    display: flex;
+    align-items: center;
+    border-top: solid hsl(215, 32%, 27%);
+}
+
+
+.creator-avatar{
+    width: 2.5rem;
+    border: solid hsl(0, 0%, 100%);
+    border-radius: 5rem;
+    margin-left: 1rem;
+    margin-top: 1rem;
+}
+
+.creator-content p{
+    font-size: 18px;
+    color: hsl(215, 32%, 27%);
+    padding-left:1rem;
+    padding-top: 1rem;
+}
+
+.creator-name{
+    color:hsl(0, 0%, 100%);
+}
+
+.creator-name:hover{
+    cursor: pointer;
+    color: var(--Cyan);
+}
+
+.attribution{
+    font-size: 16px;
+    text-align: center;
+    margin-top: 2rem;
+
+}
+
+.attribution a{
+    color: var(--Cyan);
+}
+
+@media(max-width:375px){
+    .container{
+        height: 90vh;;
+        margin: 2rem;
+    }
+    .attribution{
+        margin-top: 3rem;
+    }
+}
+
